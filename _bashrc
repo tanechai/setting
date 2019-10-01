@@ -2,7 +2,7 @@
  
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-▸-. /etc/bashrc
+. /etc/bashrc
 fi                     
  
 # User specific environment
@@ -28,7 +28,7 @@ function add_line {
   fi                   
 }                      
 PROMPT_COMMAND='add_line'
-export PS1='[\[\e[92m\]\u@\h\[\e[0m\] \[\e[94m\]\w\[\e[0m\]]\[\e[1;93m$(__git_ps1 "(%s)")\[\e    [0m\]\$ '
+export PS1='[\[\e[92m\]\u@\h\[\e[0m\] \[\e[94m\]\w\[\e[0m\]]\[\e[1;93m$(__git_ps1 "(%s)")\[\e[0m\]\$ '
  
 . /etc/profile.d/vte.sh
 

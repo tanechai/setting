@@ -14,9 +14,13 @@ export PATH
  
 
 # User specific aliases and functions
- 
-alias cmakenin="cmake .. -G Ninja -DCMAKE_CXX_COMPILER=clang++" 
+
+# robocup専用オプション付cmake
+alias cmakeopt="cmake .. -G Ninja -DCMAKE_CXX_COMPILER=clang++ -DUSE_SYSTEM_NNAMLA=ON" 
+# 使いやすいgit log
 alias gitlog="git log --oneline --graph --decorate"
+
+# git用ファイルの読み込み
 source ~/.git-prompt.sh
  
 # 出力の後に改行を入れる
@@ -28,6 +32,8 @@ function add_line {
   fi                   
 }                      
 PROMPT_COMMAND='add_line'
+
+# プロンプト最強セット
 export PS1='[\[\e[92m\]\u@\h\[\e[0m\] \[\e[94m\]\w\[\e[0m\]]\[\e[1;93m$(__git_ps1 "(%s)")\[\e[0m\]\$ '
  
 . /etc/profile.d/vte.sh

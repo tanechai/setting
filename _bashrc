@@ -15,8 +15,8 @@ export PATH
 
 # User specific aliases and functions
  
-alias cmakenin="cmake .. -G Ninja -DCMAKE_CXX_COMPILER=clang++"
- 
+alias cmakenin="cmake .. -G Ninja -DCMAKE_CXX_COMPILER=clang++" 
+alias gitlog="git log --oneline --graph --decorate"
 source ~/.git-prompt.sh
  
 # 出力の後に改行を入れる

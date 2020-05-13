@@ -16,7 +16,7 @@ export PATH
 # User specific aliases and functions
 
 # robocup専用オプション付cmake
-alias cmakeopt="cmake .. -G Ninja -DCMAKE_CXX_COMPILER=clang++ -DUSE_SYSTEM_NNABLA=ON"
+alias cmakeopt="cmake .. -G Ninja -DCMAKE_CXX_COMPILER=clang++ -DUSE_SYSTEM_NNABLA=OFF"
 # 使いやすいgit log
 alias gitlog="git log --oneline --graph --decorate"
 

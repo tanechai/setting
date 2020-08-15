@@ -34,7 +34,7 @@ function add_line {
 PROMPT_COMMAND='add_line'
 
 # プロンプト最強セット
-export PS1='[\[\e[92m\]\u@\h\[\e[0m\] \[\e[94m\]\w\[\e[0m\]]\[\e[1;93m$(__git_ps1 "(%s)")\[\e[0m\]\$ '
+export PS1='[\[\e[92m\]\u@\h\[\e[0m\] \[\e[94m\]\w\[\e[0m\]]\[\e[1;93m\]$(__git_ps1 "(%s)")\[\e[0m\]\$ '
  
 . /etc/profile.d/vte.sh
 
